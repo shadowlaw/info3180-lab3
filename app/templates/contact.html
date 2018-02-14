@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block main %}
-{{ contactForm.csrf_token }}
 <h2>Contact Form</h2>
 <hr id="title_sep">
 <form id="contact_form" action="{{url_for('contact')}}" method="POST">
+    {{ contactForm.csrf_token }}
     <div>
         <span>Fill in this form to contact the site owners.</span>
     </div>
